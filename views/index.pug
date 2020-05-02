@@ -1,0 +1,16 @@
+extends layout
+block head
+  link(rel="stylesheet", href="/stylesheets/style.css")
+block content
+  .container
+    .row
+      .col-12
+        .chat-container
+          .chat-text-area-block
+          .chat-type-are-block
+            .form
+              .form-group
+                input.form-control#userInput(type="text")
+              button.btn.btn-primary.send-btn(type="submit") Send
+block append js
+  include scripts
